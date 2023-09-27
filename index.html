@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha348-wvfXpqpZZVQGK6TAh5PV1GOfQNHSoD2xbE+QkPxCAF1NEevoEH3S10sibVcOqVnN" crossorigin="anonymous">
+    <link rel="icon" type="imagem/png" href="assets/logo.png" />
+  <title>Braza</title>
+</head>
+<body>
+<header>
+  <img id="braza-header" src="assets/logotipo.png" alt="">
+  <div class="nav">
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle"/>
+    <div class="menu">
+        <a href="#home">Home</a>
+        <a href="#about-us">Sobre nós</a>
+        <a href="#services">Serviços</a>
+        <button role="button" class="botao">
+            Fale conosco</button>
+    </div>
+  </div>
+</header>
+
+
+<!--
+  <header>
+    <div>
+      <img id="braza-header" src="assets/logotipo.png" alt="">
+    </div>
+    <div id="menu">
+      <a id="ativo" href="#home">Home</a>
+      <a href="#about-us">Sobre nós</a>
+      <a href="#services">Serviços</a>
+      <a href="#for-you">Para você</a>
+      <a href="#feedbacks">Feedbacks</a>
+    </div>
+    <button id="button-menu">Fale conosco</button>
+  </header>-->
+  <main>
+    <div id="home">
+      <h1>Soluções simples para problemas complexos</h1>
+    </div>
+    <div id="services">
+    <h2>How we work</h2>
+    <div id="grade-services">
+      <div class="caixa-service">
+        <div class="linha-caixa">
+          <img class="imagem-caixa" src="assets/pagina-da-internet.png" alt="website">
+          <h3>Criação de site</h3>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis nulla ipsa fuga quae dolorem nostrum nemo voluptatibus ea molestias ducimus quaerat corporis iusto mollitia deleniti debitis eaque, alias, quod modi.</p>
+      </div>
+      <div class="caixa-service">
+        <div class="linha-caixa">
+          <img class="imagem-caixa" src="assets/megafone.png" alt="redes-sociais">
+          <h3>Gerenciamento de redes sociais</h3>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis nulla ipsa fuga quae dolorem nostrum nemo voluptatibus ea molestias ducimus quaerat corporis iusto mollitia deleniti debitis eaque, alias, quod modi.</p>
+      </div>
+      <div class="caixa-service">
+        <div class="linha-caixa">
+          <img class="imagem-caixa" src="assets/fotografia.png" alt="redes-sociais">
+          <h3>Criação de conteúdo</h3>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis nulla ipsa fuga quae dolorem nostrum nemo voluptatibus ea molestias ducimus quaerat corporis iusto mollitia deleniti debitis eaque, alias, quod modi.</p>
+      </div>
+    </div>
+    </div>
+    <div id="empresa">
+      <h2>Fazemos sua empresa decolar no mercado</h2>
+      <div class="scene">
+        <div class="rocket">
+            <img src="assets/rocket.png" alt="">
+        </div>
+    </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+        <div class="sec aboutus">
+            <h2>Sobre nós</h2>
+            <p>Consequat excepteur laborum veniam sunt occaecat enim enim nisi. Lorem nisi mollit proident anim in officia voluptate ex veniam. Ut cillum excepteur eiusmod eu. Labore reprehenderit labore qui sit eu id sit minim culpa cupidatat irure tempor. Ut tempor ad mollit aute.</p>
+            <ul class="sci">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="sec quickLinks">
+            <h2>Links Úteis</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Feedbacks</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+        <div class="sec contact">
+            <h2>Mais informações</h2>
+            <ul class="info">
+                <li>
+                    <span><i class="fas fa-map-marker-alt"></i></span>
+                    <p>Maceió, Alagoas, Brasil</p>
+                </li>
+                <li>
+                    <span><i class="fas fa-phone-alt"></i></span>
+                    <p><a href="tel:123456789">82 99208-2753</a><br>
+                       <a href="tel:123456789">19 99208-2753</a>
+                    </p>
+                </li>
+                <li>
+                    <span><i class="fas fa-envelope"></i></span>
+                    <p><a href="mailto:contatobrazadigital@gmail.com">contatobrazadigital.com</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<div class="copyrightText">
+    <p>Copyright © 2023 Digital Braza. Todos direitos reservados.</p>
+</div>
+
+<script>
+  function stars(){
+      let count = 30;
+      let scene = document.querySelector('.scene');
+      let i = 0;
+      while(i < count){
+          let star = document.createElement('i');
+          let x = Math.floor(Math.random() * window.innerWidth);
+
+          let duration = Math.random() * 1;
+          let h = Math.random() * 100;
+
+          star.style.left = x + 'px';
+          star.style.width = 1 + 'px';
+          star.style.height = 50 + h + 'px';
+          star.style.animationDuration = duration + 's';
+
+
+          scene.appendChild(star);
+          i++
+      }
+  }
+  stars();
+</script>
+</body>
+</html>

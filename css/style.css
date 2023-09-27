@@ -1,0 +1,529 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  color: white;
+  font-family: 'Poppins';
+  box-sizing: border-box;
+}
+body
+{
+  background-color: #000;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5vw 0 5vw;
+  background-color: #0000FE;
+}
+#menu{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3vw;
+  align-items: center;
+  font-weight: 300;
+  text-align: center;
+  margin: 0px 20px;
+}
+a{
+  text-decoration: none;
+}
+#ativo{
+  font-weight: 600;
+
+}
+#button-menu{
+  background-color: #DFFD53;
+  border: none;
+  padding: 5px 15px;
+  color: black;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+#braza-header{
+  width: 150px;
+}
+#home {
+background-color: #0000FE;
+color: white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 10vw 10vw;
+z-index: 1;
+}
+#services{
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10vw 10vw;
+}
+h1{
+  font-size: 4rem;
+  font-weight: 500;
+  max-width: 600px;
+  line-height: 4rem;
+}
+h2{
+  font-size: 2.8rem;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+p{
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+  padding-left: 10px;
+  color: #999;
+  word-spacing: 0.5px;
+}
+#grade-services{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1100px;
+}
+.caixa-service{
+  width: 20%;
+}
+.linha-caixa{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+}
+.linha-caixa h3{
+  font-weight: 300;
+  font-size:1.5rem;
+  line-height: 1.5rem;
+}
+.imagem-caixa{
+  width: 25%;
+  opacity: 50%;
+  height: max-content;
+}
+
+
+#empresa{
+  background-color: #DFFD53;
+  padding: 0vw 10px 0px 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+#empresa h2{
+  max-width: 600px;
+  line-height: 3.2rem;
+  font-size: 3.2rem;
+  color: black;
+  font-weight: 500;
+}
+
+
+footer
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .container
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+footer .container .sec
+{
+    margin-right: 30px;
+}
+footer .container .sec.aboutus
+{
+    width: 40%;
+}
+footer .container h2
+{
+    position: relative;
+    color: #FFF;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .container h2::before
+{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 5px;
+    background: #ff38b4;
+}
+footer p
+{
+    color: #999;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.sci
+{
+    margin-top: 20px;
+    display: flex;
+}
+.sci li
+{
+    list-style: none;
+}
+.sci li a
+{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #ff38b4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 2rem;
+}
+.sci li a:hover
+{
+    background: #DFFD53;
+}
+.sci li a .fa
+{
+    color: #fff;
+    font-size: 20px;
+}
+.quickLinks
+{
+    position: relative;
+    width: 25%;
+}
+.quickLinks ul li
+{
+    list-style: none;
+}
+.quickLinks ul li a
+{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.quickLinks ul li a:hover
+{
+    color: #fff;
+}
+.contact
+{
+    width: calc(35% - 60px);
+    margin-right: 0 !important ;
+}
+.contact .info
+{
+    position: relative;
+}
+.contact .info li
+{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1)
+{
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li span
+{
+    color: #999;
+}
+.contact .info li a
+{
+    color: #999;
+    text-decoration: none;
+}
+.contact .info li a:hover
+{
+    color: #fff;
+}
+.copyrightText
+{
+    width: 100%;
+    background: #000;
+    padding: 8px 100px;
+    text-align: center;
+    color: #999;
+}
+.copyrightText p{
+  text-align: center;
+}
+li{
+  list-style: none;
+  text-align: center;
+  color: black;
+}
+#logo-footer{
+  width: 100px;
+}
+.coluna-footer h3{
+  text-align: center;
+  color: black;
+}
+
+
+@media (max-width: 800px){
+
+}
+
+.scene{
+  position: relative;
+  width: 100%;
+  height: 340px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scene i {
+  position: absolute;
+  top: -250px;
+  background: rgba(0,0,0,0.2);
+  animation: animateStars linear infinite;
+}
+@keyframes animateStars{
+  0%
+  {
+      transform: translateY(0);
+  }
+  100%
+  {
+      transform: translateY(200vh);
+  }
+}
+.scene .rocket{
+  position: relative;
+  animation: animate 0.2s ease infinite;
+}
+@keyframes animate{
+  0%,100%
+  {
+      transform: translateY(-2px);
+  }
+  50%
+  {
+      transform: translateY(2px);
+  }
+}
+.scene .rocket::before
+{
+  content: '';
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 200px;
+  background: linear-gradient(#ff38b4,transparent);
+}
+.scene .rocket::after
+{
+  content: '';
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 200px;
+  background: linear-gradient(#ff38b4,transparent);
+  filter: blur(10px);
+}
+
+.nav{
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+  z-index: 10;
+}
+.menu{
+  margin: 0 0px 0 0;
+}
+.menu a{
+  clear: right;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 10px;
+  line-height: 25px;
+}
+.menu a:hover{
+  color:#fff;
+}
+label{
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+  color: #daf1ff;
+}
+#toggle{
+  display: none;
+}
+.botao{
+  background-color:#DFFD53;
+  color: black;
+  border: none;
+  padding: 5px 20px;
+  margin-top: 3%;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .3s ease all;
+}
+.botao:nth-child(1)
+{
+  height: 50px;
+  border-radius: 10px;
+}
+.botao:hover{
+  opacity: .7;
+  color: #000;
+  background: white;
+}
+@media (max-width: 800px){
+  label{
+      display: block;
+      cursor: pointer;
+  }
+  .menu{
+      text-align: center;
+      width: 100%;
+      display: none;
+  }
+  .menu a{
+      display: block;
+      border-bottom: 1px solid #EAEAEB;
+      margin: 0;
+  }
+  #toggle:checked + .menu{
+      display: block;
+      background-color: rgba( 2, 2, 2, 0.9 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.8 );
+      padding: 10px 20px;
+      border-radius: 15px;
+  }
+  #toggle:checked + .nav{
+    margin-bottom: 100px;
+  }
+  .scene{
+    height: 280px;
+  }
+
+  #services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0px;
+  }
+  #grade-services{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    margin: 0px;
+  }
+  .caixa-service{
+    width: 100%;
+  }
+  .linha-caixa{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+  }
+  .linha-caixa h3{
+    font-weight: 300;
+    font-size:1.5rem;
+    line-height: 1.5rem;
+  }
+  .imagem-caixa{
+    width: 25%;
+    opacity: 50%;
+    height: max-content;
+  }
+  h1{
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+
+#empresa{
+  background-color: #DFFD53;
+  padding: 10px 20px 0px 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+}
+  #empresa h2{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+  footer
+    {
+        padding: 40px;
+    }
+    footer .container
+    {
+        flex-direction: column;
+    }
+    footer .container .sec
+    {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .container .sec.aboutus,
+    .quickLinks,
+    .contact
+    {
+        width: 100%;
+    }
+    .copyrightText
+    {
+        padding: 8px 40px;
+        text-align: center;
+    }
+}
