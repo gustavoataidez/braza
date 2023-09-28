@@ -135,7 +135,7 @@ p{
   border: none;
   border-radius: 50px;
   padding: 5px 15px;
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 1.2rem;
   box-shadow: 0 0px 30px -5px #ff38b4;
   color: #fff;
@@ -166,7 +166,7 @@ p{
   color: #fff;
   background-color: #000;
   font-size: 1.2rem;
-  padding: 5px 10px;
+  padding: 5px 15px;
   border-radius: 50px;
 }
 
@@ -242,7 +242,7 @@ footer p
     align-items: center;
     margin-right: 10px;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 5px;
     color: #fff;
     font-size: 1.8rem;
 }
@@ -314,7 +314,7 @@ footer p
 .copyrightText
 {
     width: 100%;
-    background: #222;
+    background: #111;
     padding: 8px 100px;
     text-align: center;
 }
@@ -337,7 +337,7 @@ footer p
 .scene i {
   position: absolute;
   top: -250px;
-  background: #b1e635;
+  background: #a1d42b;
   animation: animateStars linear infinite;
 }
 @keyframes animateStars{
@@ -412,7 +412,7 @@ footer p
 }
 label{
   margin: 0 20px 0 0;
-  font-size: 26px;
+  font-size: 36px;
   line-height: 70px;
   display: none;
   width: 26px;
@@ -455,13 +455,13 @@ label{
 }
 #link-imagem-wpp{
   position: fixed;
-  bottom: 30px;
+  bottom: 20px;
   right: 20px;
   background-color: #25D366;
   padding: 15px 15px 10px 15px;
   border-radius: 100%;
   z-index: 102;
-  box-shadow: 0 0 30px -10px #25D366;
+  box-shadow: 0 0 30px -5px #25D366;
 }
 
 
