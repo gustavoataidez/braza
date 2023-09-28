@@ -125,7 +125,6 @@ p{
   width: 20%;
   height: auto;
   opacity: 50%;
-  height: max-content;
 }
 .botao-caixa{
   background-color: #ff38b4;
@@ -473,7 +472,7 @@ label{
     margin-bottom: 100px;
   }
   .scene{
-    height: 350px;
+    height: 300px;
   }
 
   #services{
@@ -515,7 +514,6 @@ label{
     width: 20%;
     height: auto;
     opacity: 50%;
-    height: max-content;
   }
   h1{
     font-size: 3rem;
@@ -535,8 +533,8 @@ label{
   gap: 0px;
 }
   #empresa h2{
-    font-size: 2.2rem;
-    line-height: 2.2rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
   }
   footer
     {
