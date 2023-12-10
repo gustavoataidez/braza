@@ -39,7 +39,10 @@ a{
 }
 #ativo{
   font-weight: 600;
-
+}
+button:hover{
+  scale: 1.1;
+  transition: 0.5s;
 }
 #button-menu{
   background-color: #DFFD53;
@@ -55,7 +58,7 @@ a{
   width: 150px;
 }
 #home {
-background-image: url("/assets/backgroundd.png");
+background-image: url("../assets/backgroundd.png");
 background-color: #0a1eff;
 background-position: center; /* Center the image */
 background-repeat: no-repeat; /* Do not repeat the image */
@@ -168,6 +171,12 @@ p{
   font-size: 1.2rem;
   padding: 5px 15px;
   border-radius: 50px;
+}
+
+#empresa a:hover{
+  scale: 2;
+  transition: 0.5s;
+  background-color: #ff38b4;
 }
 
 
@@ -525,7 +534,7 @@ label{
     align-items: center;
   }
   .linha-caixa h3{
-    font-weight: 300;
+    font-weight: 400;
     font-size:1.6rem;
     line-height: 1.6rem;
   }
