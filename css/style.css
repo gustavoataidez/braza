@@ -94,10 +94,10 @@ h2{
 }
 p{
   text-align: left;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 400;
   padding-left: 0px;
-  color: #999;
+  color: #ebebeb;
   word-spacing: 0.5px;
 }
 #services h2{
@@ -226,9 +226,9 @@ footer .container h2::before
 }
 footer p
 {
-    color: #999;
+    color: #e2e2e2;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.1rem;
     width: 80%;
 }
 .sci
@@ -574,8 +574,8 @@ label{
     }
     footer p
     {
-      font-size: 14px;
-      line-height: 20px;
+      font-size: 1rem;
+      line-height: 22px;
       width: 100%;
     }
     footer .container .sec
