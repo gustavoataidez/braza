@@ -1,180 +1,338 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha348-wvfXpqpZZVQGK6TAh5PV1GOfQNHSoD2xbE+QkPxCAF1NEevoEH3S10sibVcOqVnN" crossorigin="anonymous">
-  <link rel="icon" type="imagem/png" href="assets/logo.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="imagem/png" href="assets/logo.png" />
   <title>Braza Digital</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #201F20;
+            color: #fff;
+        }
+
+        header {
+            background: #201F20;
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav {
+            display: flex;
+            gap: 1rem;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        header .cta {
+            background: #DFFD53;
+            color: #000;
+            padding: 0.5rem 1rem;
+            border-radius: 15px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 10rem 2rem;
+            background: #1226AA;
+            background-image: url("../assets/backgroundd.png");
+
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #fff;
+        }
+
+        .hero .buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .hero .buttons a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+            background: #DFFD53;
+            padding: 0.5rem 1rem;
+            border-radius: 15px;
+        }
+
+        .services {
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            background: #201F20;
+        }
+
+        .services h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #fff;
+        }
+
+        .services .service {
+            width: 20%;
+            background: #28292f;
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .services .service h3 {
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        .services .service p {
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .services .service button {
+            background: #DFFD53;
+            color: #000;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 15px;
+            cursor: pointer;
+            font-weight: 400;
+            font-size: 1rem;
+        }
+
+        .portfolio {
+            padding: 1rem;
+            text-align: center;
+            background: #201F20;
+        }
+
+        .portfolio h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: #fff;
+        }
+
+        .portfolio .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .portfolio .images img {
+            width: 40%;
+            height: auto;
+            border-radius: 15px;
+        }
+
+        .contact {
+            padding: 2rem;
+            background: #201F20;
+        }
+
+        .contact h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #fff;
+        }
+
+        .contact form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .contact form input, .contact form textarea, .contact form button {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 1rem;
+        }
+
+        .contact form input, .contact form textarea {
+            background: #201F20;
+            color: #fff;
+        }
+
+        .contact form button {
+            background: #0000FE;
+            color: #fff;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+
+        }
+
+        footer {
+            background: #201F20;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: #DFFD53;
+            text-decoration: none;
+        }
+
+        .logo img {
+            width: 150px;
+            height: 30px;
+        }
+
+        @media (max-width: 768px) {
+            header nav {
+                display: none;
+            }
+
+            .hero h1, .hero p {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .services .service {
+                width: 100%;
+            }
+
+            .hero .buttons a {
+                font-size: 1.1rem;
+                line-height: 1.6rem;
+                padding: 0.4rem 0.8rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+                line-height: 3rem;
+                font-weight: 600;
+            }
+            .hero {
+            padding: 6rem 2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+            .portfolio .images img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+        header .cta {
+            width: min-content;
+        }
+        }
+    </style>
 </head>
 <body>
-<header>
-  <img id="braza-header" src="assets/logotipo.png" alt="">
-  <div class="nav">
-    <label for="toggle">&#9776;</label>
-    <input type="checkbox" id="toggle"/>
-    <div class="menu">
-        <a href="#home">Home</a>
-        <a href="#about-us">Sobre nós</a>
-        <a href="#services">Serviços</a>
-        <button role="button" class="botao"><a href="https://wa.me/5582999355730" style="color:#000">Fale conosco</a></button>
-    </div>
-  </div>
-</header>
-<a href="" id="link-imagem-wpp"><img id="imagem-wpp" src="assets/whatsapp.png" alt=""></a>
+    <header>
+        <div class="logo">
+            <img src="./assets/logotipo.png" alt="Braza Logo">
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Serviços</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contact">Contato</a>
+        </nav>
+        <a href="#contact" class="cta">Solicitar Orçamento</a>
+    </header>
 
-<!--
-  <header>
-    <div>
-      <img id="braza-header" src="assets/logotipo.png" alt="">
+    <div id="home" class="hero">
+        <h1>Soluções Digitais que Transformam Negócios</h1>
+        <p>Sites, e-commerces e estratégias digitais criadas para você crescer.</p>
+        <div class="buttons">
+            <a href="#contact">Fale Conosco</a>
+            <a href="#services">Conheça nossos Serviços</a>
+        </div>
     </div>
-    <div id="menu">
-      <a id="ativo" href="#home">Home</a>
-      <a href="#about-us">Sobre nós</a>
-      <a href="#services">Serviços</a>
-      <a href="#for-you">Para você</a>
-      <a href="#feedbacks">Feedbacks</a>
-    </div>
-    <button id="button-menu">Fale conosco</button>
-  </header>-->
 
-  <main>
-    <div id="home">
-      <h1>Soluções simples para problemas complexos</h1>
-    </div>
-    <div id="services">
-    <h2 style="line-height: 2.5rem;">Como nós trabalhamos</h2>
-    <div id="grade-services">
-      <div class="caixa-service">
-        <div class="linha-caixa">
-          <img class="imagem-caixa" src="assets/pagina-da-internet.png" alt="website">
-          <h3>Criação de site</h3>
+    <div id="services" class="services">
+        <h2>O Que Oferecemos</h2>
+        <div class="service">
+            <h3>Criação de Sites</h3>
+            <p>Sites institucionais, blogs e portais com design moderno e responsivo.</p>
+            <button>Saiba Mais</button>
         </div>
-        <p>Destaque-se online com um site único e envolvente. O mundo está na internet e sua empresa precisa de um portfólio digital. Transformamos sua visão em realidade, criando sites que cativam e convertem. Seu sucesso começa aqui!</p>
-        <a href="https://wa.me/5582999355730"><button class="botao-caixa">Saiba mais<i class="fas fa-arrow-right"></i></button></a>
-      </div>
-      <div class="caixa-service">
-        <div class="linha-caixa">
-          <img class="imagem-caixa" src="assets/megafone.png" alt="redes-sociais">
-          <h3>Estratégia de marketing</h3>
+        <div class="service">
+            <h3>Lojas Virtuais</h3>
+            <p>E-commerces integrados com sistemas de pagamento e SEO otimizado.</p>
+            <button>Saiba Mais</button>
         </div>
-        <p>Maximize seu impacto online com nossa Estratégia de Marketing especializada. Desenvolvemos planos personalizados para impulsionar sua visibilidade e conquistar seu público-alvo. Cresça com confiança!</p>
-        <a href="https://wa.me/5582999355730"><button class="botao-caixa">Saiba mais<i class="fas fa-arrow-right"></i></button></a>
-      </div>
-      <div class="caixa-service">
-        <div class="linha-caixa">
-          <img class="imagem-caixa" src="assets/grafico-de-barras.png" alt="redes-sociais">
-          <h3>Gestão de tráfego pago</h3>
+        <div class="service">
+            <h3>SEO e Otimização</h3>
+            <p>Aumente sua visibilidade e conquiste mais clientes nos buscadores.</p>
+            <button>Saiba Mais</button>
         </div>
-        <p>Potencialize sua presença digital com nossa Gestão de Tráfego Pago. Alcance seu público-alvo e amplie suas oportunidades de negócio. Resultados mensuráveis, sempre!</p>
-        <a href="https://wa.me/5582999355730"><button class="botao-caixa">Saiba mais<i class="fas fa-arrow-right"></i></button></a>
-      </div>
-      <div class="caixa-service">
-        <div class="linha-caixa">
-          <img class="imagem-caixa" src="assets/idvisual.png" alt="redes-sociais">
-          <h3>Logo e Identidade Visual</h3>
-        </div>
-        <p>Sua marca é única, e merece uma identidade visual que a destaque. Desenvolvemos logos e design envolvente para contar a história da sua empresa. Surpreenda-se!</p>
-        <a href="https://wa.me/5582999355730"><button class="botao-caixa">Saiba mais<i class="fas fa-arrow-right"></i></button></a>
-      </div>
-      <div class="caixa-service">
-        <div class="linha-caixa">
-          <img class="imagem-caixa" src="assets/chatbot.png" alt="redes-sociais">
-          <h3>Atendimento automatizado</h3>
-        </div>
-        <p>Otimize seu atendimento com nossa solução automatizada. Respostas instantâneas, eficiência 24/7. Ofereça uma experiência excepcional aos seus clientes, sem esforço.</p>
-        <a href="https://wa.me/5582999355730"><button class="botao-caixa">Saiba mais<i class="fas fa-arrow-right"></i></button></a>
-      </div>
-      <div class="caixa-service">
-        <div class="linha-caixa">
-          <img class="imagem-caixa" src="assets/blog.png" alt="redes-sociais">
-          <h3>Conteúdo para blog</h3>
-        </div>
-        <p>Enriqueça seu site com conteúdo relevante e envolvente. Nosso serviço de criação de conteúdo para blog impulsiona sua visibilidade e autoridade no mercado. Conquiste sua audiência!</p>
-        <a href="https://wa.me/5582999355730"><button class="botao-caixa">Saiba mais<i class="fas fa-arrow-right"></i></button></a>
-      </div>
-    </div>
-    </div>
-    <div id="empresa">
-      <h2>Fazemos sua empresa decolar no mercado.<br><a href="https://wa.me/5582999355730">Quero ter resultados</a></h2>
-      <div class="scene">
-        <div class="rocket">
-            <img src="assets/foguete-3d.png" alt="">
-        </div>
-      </div>
-    </div>
-  </main>
-  <footer>
-    <div class="container">
-        <div class="sec aboutus" id="about-us">
-            <h2>Sobre nós</h2>
-            <p>Somos a ponte entre suas ideias e o sucesso digital. Na vanguarda da inovação, nossa agência transforma visões em realidade. Com criatividade, expertise técnica e compromisso, elevamos marcas, construímos presença online impactante e impulsionamos resultados. Sua jornada digital começa aqui, conosco.</p>
-            <ul class="sci">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="https://twitter.com/digitalbraza"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com/digitalbraza"><i class="fab fa-instagram"></i></a></li>
-                <!--<li><a href="#"><i class="fab fa-youtube"></i></a></li>-->
-            </ul>
-        </div>
-        <div class="sec quickLinks">
-            <h2>Links Úteis</h2>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Whatsapp</a></li>
-            </ul>
-        </div>
-        <div class="sec contact">
-            <h2>Mais informações</h2>
-            <ul class="info">
-                <li>
-                    <span><i class="fas fa-map-marker-alt"></i></span>
-                    <p><a href="">Maceió, Alagoas, Brasil</a></p>
-                </li>
-                <li>
-                    <span><img class="icone" src="assets/whatsapp.png" alt=""></span>
-                    <p><a href="tel:+5582999355730">82 99935-5730</a><br>
-                    </p>
-                </li>
-                <li>
-                    <span><i class="fas fa-envelope"></i></span>
-                    <p><a href="mailto:contatobrazadigital@gmail.com">contatobrazadigital@gmail.com</a></p>
-                </li>
-            </ul>
+        <div class="service">
+            <h3>Manutenção e Suporte</h3>
+            <p>Atualizações e suporte técnico para manter seu site sempre ativo.</p>
+            <button>Saiba Mais</button>
         </div>
     </div>
-</footer>
-<div class="copyrightText">
-    <p>Copyright © 2023 Braza Digital.<br> Todos direitos reservados.</p>
-</div>
 
-<script>
-  function stars(){
-      let count = 30;
-      let scene = document.querySelector('.scene');
-      let i = 0;
-      while(i < count){
-          let star = document.createElement('i');
-          let x = Math.floor(Math.random() * window.innerWidth);
+    <div id="portfolio" class="portfolio">
+        <h2>Nossos Projetos</h2>
+        <div class="images">
+            <img src="./assets/site-trinity.png" alt="Projeto 1">
+            <img src="./assets/site-zantex.png" alt="Projeto 2">
+            <img src="./assets/site-efisyan.png" alt="Projeto 3">
+            <img src="./assets/site-mvtransfers.png" alt="Projeto 4">
+            <img src="./assets/site-emocoes.png" alt="Projeto 5">
+            <img src="./assets/site-immoderatus.png" alt="Projeto 6">
+        </div>
+    </div>
 
-          let duration = Math.random() * 1;
-          let h = Math.random() * 100;
+    <div id="contact" class="contact">
+        <h2>Fale Conosco</h2>
+        <form>
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu E-mail" required>
+            <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </div>
 
-          star.style.left = x + 'px';
-          star.style.width = 1 + 'px';
-          star.style.height = 50 + h + 'px';
-          star.style.animationDuration = duration + 's';
-
-
-          scene.appendChild(star);
-          i++
-      }
-  }
-  stars();
-</script>
+    <footer>
+        <p>&copy; 2025 Braza. Todos os direitos reservados. <a href="#">Política de Privacidade</a></p>
+    </footer>
 </body>
 </html>
