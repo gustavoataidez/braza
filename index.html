@@ -21,7 +21,7 @@
         }
 
         header {
-            background: #201F20;
+            background: #0000FE;
             color: #fff;
             padding: 1rem 2rem;
             display: flex;
@@ -51,8 +51,10 @@
         .hero {
             text-align: center;
             padding: 10rem 2rem;
-            background: #1226AA;
             background-image: url("../assets/backgroundd.png");
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover; /* Resize the background image to cover the entire container */
 
         }
 
@@ -79,6 +81,7 @@
             color: #000;
             font-weight: 500;
             background: #DFFD53;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
             padding: 0.5rem 1rem;
             border-radius: 15px;
         }
@@ -99,6 +102,7 @@
             width: 100%;
             text-align: center;
             margin-bottom: 1.5rem;
+            margin-top: 2rem;
             color: #fff;
         }
 
@@ -122,6 +126,7 @@
 
         .services .service button {
             background: #DFFD53;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
             color: #000;
             border: none;
             padding: 0.5rem 1rem;
@@ -141,6 +146,7 @@
             font-size: 1.8rem;
             font-weight: 600;
             margin-bottom: 1.5rem;
+            margin-top: 2rem;
             color: #fff;
         }
 
@@ -152,7 +158,7 @@
         }
 
         .portfolio .images img {
-            width: 40%;
+            width: 26%;
             height: auto;
             border-radius: 15px;
         }
@@ -167,6 +173,7 @@
             font-weight: 600;
             text-align: center;
             margin-bottom: 1.5rem;
+            margin-top: 2rem;
             color: #fff;
         }
 
@@ -218,7 +225,7 @@
             height: 30px;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 780px) {
             header nav {
                 display: none;
             }
@@ -226,6 +233,9 @@
             .hero h1, .hero p {
                 font-size: 1.5rem;
             }
+            .portfolio .images img {
+            width: 40%;
+        }
         }
 
         @media (max-width: 480px) {
@@ -290,22 +300,22 @@
         <div class="service">
             <h3>Criação de Sites</h3>
             <p>Sites institucionais, blogs e portais com design moderno e responsivo.</p>
-            <button>Saiba Mais</button>
+            <button><a style="text-decoration: none; color: #000;" href="https://api.whatsapp.com/send/?phone=5511941653750&text=Estou+entrando+em+contato+atrav%C3%A9s+do+site">Saiba Mais</a></button>
         </div>
         <div class="service">
             <h3>Lojas Virtuais</h3>
             <p>E-commerces integrados com sistemas de pagamento e SEO otimizado.</p>
-            <button>Saiba Mais</button>
+            <button><a style="text-decoration: none; color: #000;" href="https://api.whatsapp.com/send/?phone=5511941653750&text=Estou+entrando+em+contato+atrav%C3%A9s+do+site"></a>Saiba Mais</a></button>
         </div>
         <div class="service">
             <h3>SEO e Otimização</h3>
             <p>Aumente sua visibilidade e conquiste mais clientes nos buscadores.</p>
-            <button>Saiba Mais</button>
+            <button><a style="text-decoration: none; color: #000;" href="https://api.whatsapp.com/send/?phone=5511941653750&text=Estou+entrando+em+contato+atrav%C3%A9s+do+site">Saiba Mais</a></button>
         </div>
         <div class="service">
             <h3>Manutenção e Suporte</h3>
             <p>Atualizações e suporte técnico para manter seu site sempre ativo.</p>
-            <button>Saiba Mais</button>
+            <button><a style="text-decoration: none; color: #000;" href="https://api.whatsapp.com/send/?phone=5511941653750&text=Estou+entrando+em+contato+atrav%C3%A9s+do+site">Saiba Mais</a></button>
         </div>
     </div>
 
@@ -315,8 +325,8 @@
             <img src="./assets/site-trinity.png" alt="Projeto 1">
             <img src="./assets/site-zantex.png" alt="Projeto 2">
             <img src="./assets/site-efisyan.png" alt="Projeto 3">
-            <img src="./assets/site-mvtransfers.png" alt="Projeto 4">
-            <img src="./assets/site-emocoes.png" alt="Projeto 5">
+            <img src="./assets/site-emocoes.png" alt="Projeto 4">
+            <img src="./assets/site-mvtransfers.png" alt="Projeto 5">
             <img src="./assets/site-immoderatus.png" alt="Projeto 6">
         </div>
     </div>
