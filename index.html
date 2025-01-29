@@ -333,7 +333,7 @@
 .site-footer {
     background: #161616;
     color: #fff;
-    padding: 3rem 0;
+    padding-top: 3rem;
     text-align: center;
 }
 
@@ -383,8 +383,8 @@
 
 .social-media {
     display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
+    flex-direction: column;
+    gap: 0.4em;
 }
 
 .social-media a {
@@ -437,11 +437,16 @@
                 text-align: center;
             }
 
+        .about {
+            padding: 2rem 1rem;
+        }
+
             .about-content img, 
             .about-content .text {
                 width: 100%;
                 text-align: center;
-                font-size: 1em;
+                font-size: 1.1em;
+                font-weight: 300;
             }
         }
 
@@ -451,11 +456,14 @@
             .footer-wrapper {
         flex-direction: column;
         text-align: center;
+        align-items: center;
+        justify-content: center;
     }
 
     .footer-section {
         width: 100%;
         margin-bottom: 1.5rem;
+        text-align: center;
     }
             .servicess .service {
                 width: 100%;
@@ -581,7 +589,7 @@
     <div id="contact" class="contact">
         <h2>Fale Conosco</h2>
         <div class="info">
-            <p>Entre em contato pelo telefone: <strong style="color: #fff;">+55 82 99935-5730</strong></p>
+            <p>Entre em contato pelo telefone: <strong style="color: #fff;">82 99935-5730</strong></p>
             <p>Ou pelo e-mail: <strong>contatobrazadigital@gmail.com</strong></p>
         </div>
         <div class="whatsapp">
@@ -603,9 +611,8 @@
             <div class="footer-section">
                 <h3>Links Úteis</h3>
                 <ul class="footer-links">
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="#servicess">Serviços</a></li>
                     <li><a href="#portfolio">Portfólio</a></li>
                     <li><a href="#contact">Contato</a></li>
                 </ul>
@@ -613,8 +620,8 @@
     
             <div class="footer-section">
                 <h3>Fale Conosco</h3>
-                <p><i class="fa-solid fa-phone"></i><strong>+55 82 99935-5730</strong></p>
-                <p><i class="fa-regular fa-envelope"></i><strong>contatobrazadigital@gmail.com</strong></p>
+                <p><i class="fa-solid fa-phone"></i> 82 99935-5730</p>
+                <p><i class="fa-regular fa-envelope"></i> contatobrazadigital@gmail.com</p>
             </div>
     
             <div class="footer-section">
@@ -623,12 +630,10 @@
                     <a href="https://api.whatsapp.com/send/?phone=5582999355730" target="_blank">
                         <i class="fa-brands fa-whatsapp"></i> Whatsapp
                     </a>
-                    <a href="https://www.instagram.com/seu_instagram" target="_blank">
+                    <a href="https://www.instagram.com/digitalbraza" target="_blank">
                         <i class="fa-brands fa-instagram"></i> Instagram
                     </a>
-                    <a href="https://www.linkedin.com/in/seu_linkedin" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i> LinkedIn
-                    </a>
+                    
                 </div>
             </div>
         </div>
