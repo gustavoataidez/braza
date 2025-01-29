@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="icon" type="imagem/png" href="assets/logo.png" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Braza Digital</title>
     <style>
         * {
@@ -133,7 +135,7 @@
             border-radius: 15px;
         }
 
-        .services {
+        .servicess {
             padding: 2rem;
             display: flex;
             justify-content: center;
@@ -143,7 +145,7 @@
             background: #201F20;
         }
 
-        .services h2 {
+        .servicess h2 {
             font-size: 1.8rem;
             font-weight: 600;
             width: 100%;
@@ -153,7 +155,7 @@
             color: #fff;
         }
 
-        .services .service {
+        .servicess .service {
             width: 20%;
             background: #28292f;
             border-radius: 15px;
@@ -161,17 +163,17 @@
             text-align: center;
         }
 
-        .services .service h3 {
+        .servicess .service h3 {
             color: #fff;
             margin-bottom: 0.5rem;
         }
 
-        .services .service p {
+        .servicess .service p {
             margin-bottom: 1rem;
             color: #fff;
         }
 
-        .services .service button {
+        .servicess .service button {
             background: #DFFD53;
             box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
             color: #000;
@@ -285,15 +287,138 @@
             margin-top: 2rem;
         }
 
-        footer a {
-            color: #DFFD53;
-            text-decoration: none;
-        }
-
         .logo img {
             width: 150px;
             height: 30px;
         }
+        .about {
+            padding: 3rem 2rem;
+            text-align: center;
+            background: #201F20;
+            color: #fff;
+        }
+
+        .about h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .about-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .about-content img {
+            width: 50%;
+            border-radius: 15px;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .about-content .text {
+            width: 50%;
+            text-align: center;
+            font-size: 1.05em;
+        }
+        .about-content p {
+            margin-bottom: 1rem;
+        }
+
+        /* Estilização do Footer */
+.site-footer {
+    background: #161616;
+    color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.footer-section {
+    width: 30%;
+    text-align: left;
+}
+
+.footer-section h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links li a:hover {
+    color: #DFFD53;
+}
+
+.footer-section p {
+    margin: 0.3rem 0;
+    font-size: 1rem;
+}
+
+.social-media {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-media a {
+    display: inline-block;
+
+    color: #fff;
+            text-decoration: none;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    background: #0F0F0F;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
 
         @media (max-width: 780px) {
             header nav {
@@ -307,10 +432,32 @@
             .portfolio .images img {
                 width: 40%;
             }
+            .about-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-content img, 
+            .about-content .text {
+                width: 100%;
+                text-align: center;
+                font-size: 1em;
+            }
         }
 
+
+
         @media (max-width: 480px) {
-            .services .service {
+            .footer-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+            .servicess .service {
                 width: 100%;
             }
             .cta-affordable {
@@ -356,7 +503,7 @@
         </div>
         <nav>
             <a href="#home">Home</a>
-            <a href="#services">Serviços</a>
+            <a href="#servicess">Serviços</a>
             <a href="#portfolio">Portfólio</a>
             <a href="#contact">Contato</a>
         </nav>
@@ -368,11 +515,23 @@
         <p>Sites, e-commerces e personalizados com preços acessíveis para você começar hoje mesmo.</p>
         <div class="buttons">
             <a href="#contact">Fale Conosco</a>
-            <a href="#services">Conheça nossos Serviços</a>
+            <a href="#servicess">Conheça nossos Serviços</a>
         </div>
     </div>
 
-    <div id="services" class="services">
+    <div id="about" class="about">
+        <h2>Sobre Nós</h2>
+        <div class="about-content">
+            <img src="./assets/escritorio.jpg" alt="Escritório da Braza Digital">
+            <div class="text">
+                <p>A <strong>Braza Digital</strong> nasceu com o propósito de ajudar empresas e profissionais a se destacarem no mundo digital. Com uma equipe apaixonada por tecnologia e inovação, oferecemos soluções personalizadas para transformar sua presença online.</p>
+                <p>Nosso compromisso é entregar sites modernos, responsivos e otimizados para os melhores resultados. Seja você um profissional autônomo ou uma empresa consolidada, <strong>temos a solução ideal para você.</strong></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="servicess" class="servicess">
         <h2>O Que Oferecemos</h2>
         <div class="service">
             <svg width="22%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="#fff"d="M64 96c0-35.3 28.7-64 64-64l384 0c35.3 0 64 28.7 64 64l0 256-64 0 0-256L128 96l0 256-64 0L64 96zM0 403.2C0 392.6 8.6 384 19.2 384l601.6 0c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8L76.8 480C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/></svg>
@@ -423,7 +582,7 @@
         <h2>Fale Conosco</h2>
         <div class="info">
             <p>Entre em contato pelo telefone: <strong style="color: #fff;">+55 82 99935-5730</strong></p>
-            <p>Ou pelo e-mail: <strong>ataidezgustavo@gmail.com</strong></p>
+            <p>Ou pelo e-mail: <strong>contatobrazadigital@gmail.com</strong></p>
         </div>
         <div class="whatsapp">
             <a href="https://api.whatsapp.com/send/?phone=5582999355730&text=Estou+entrando+em+contato+atrav%C3%A9s+do+site">Fale Conosco no WhatsApp</a>
@@ -438,8 +597,47 @@
         
     </div>
 
-    <footer>
-        <p>&copy; 2025 Braza Digital. Todos os direitos reservados. <a href="#">Política de Privacidade</a></p>
+
+    <footer class="site-footer">
+        <div class="footer-wrapper">
+            <div class="footer-section">
+                <h3>Links Úteis</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Fale Conosco</h3>
+                <p><i class="fa-solid fa-phone"></i><strong>+55 82 99935-5730</strong></p>
+                <p><i class="fa-regular fa-envelope"></i><strong>contatobrazadigital@gmail.com</strong></p>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Nossas Redes</h3>
+                <div class="social-media">
+                    <a href="https://api.whatsapp.com/send/?phone=5582999355730" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Whatsapp
+                    </a>
+                    <a href="https://www.instagram.com/seu_instagram" target="_blank">
+                        <i class="fa-brands fa-instagram"></i> Instagram
+                    </a>
+                    <a href="https://www.linkedin.com/in/seu_linkedin" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 <strong>Braza Digital</strong>. Todos os direitos reservados. <a href="#">Política de Privacidade</a></p>
+        </div>
     </footer>
+    
+    
 </body>
 </html>
